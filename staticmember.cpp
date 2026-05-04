@@ -2,7 +2,7 @@
 using namespace std;
 
 class Mahasiswa { //membuat class mahasiswa
-    
+
 public:
     static int nim; //deklarasi variabel static yaitu variabel nim
     //deklarasi variabel member
@@ -13,4 +13,7 @@ public:
     void setID();
     void printAll();
 
+    //pembuatan constructor Mahasiswa dengan parameter pnama
+    Mahasiswa(string pnama) : nama(pnama) {
+        setID();
     }
